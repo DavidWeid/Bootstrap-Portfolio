@@ -2,3 +2,19 @@ a {
     text-decoration: none;
     color: aqua;
 }
+
+#bioPic {
+    max-width: 40%;
+    height: auto;
+}
+
+.portPic {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #bioPic {
+        max-width: 100%;
+    }
+}
