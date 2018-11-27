@@ -1,6 +1,37 @@
+html,
+body {
+    font-family: 'Arimo', 'Lato', 'Noto Sans JP', 'Armata', 'Sintony', sans-serif;
+}
+
+body {
+    background-image: url("images/mochaGrunge.png");
+}
+
+.contentArea {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: teal;
+}
+
 a {
     text-decoration: none;
     color: aqua;
+}
+
+a:hover {
+    color: teal;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: teal;
+    width: 120px;
+}
+
+.borderbottom {
+    border-bottom: 2px solid teal;
 }
 
 #bioPic {
@@ -8,13 +39,57 @@ a {
     height: auto;
 }
 
+.img-thumbnail {
+    border-color: teal;
+}
+
+.textSize {
+    font-size: 16px;
+    line-height: 150%;
+}
+
 .portPic {
+    position: relative;
     max-width: 100%;
     height: auto;
+}
+
+.portPic:hover {
+    opacity: 0.5;
+    
+}
+
+.nameTag {
+color: whitesmoke;
+background-color: teal;
+position: absolute;
+bottom: 15%;
+right: 20px;
+left: 20px;
+}
+
+.footerRow {
+    border-top: 3px solid teal;
 }
 
 @media screen and (max-width: 768px) {
     #bioPic {
         max-width: 100%;
     }
+
+    h1 {
+        text-align: center;
+    }
+
+    .nameTag {
+     position: relative;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     color: teal;
+     background: none;
+     font-weight: bold;
+     padding: 10px;
+    }
+
 }
